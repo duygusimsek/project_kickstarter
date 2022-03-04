@@ -9,7 +9,7 @@ To determine the campaign timeline, Outcomes Based on Launch Date worksheet is c
 In the Descriptive Statistic worksheet, based on Successful US Kickstarter and Failed US Kickstarter, our data's Mean, Median, Standart Deviation, and IQR are calculated. 
 For the customer's future project research for musicals in Great Britain, a BoxPlot is created by using the distribution of campaign goals and the total amount of pledge. The extreme data points(outliers) were eliminated to plan better campaign funding(Customer estimate budget £4000).
 
-# Regarding Our Findings:
+## Regarding Our Findings
 Examining our "Parent Category Outcomes" bar chart; It indicates that among all the other subcategories, theather has the highest success. 
 Examining our "Outcomes Based On Launch Date" line chart; It reveals that May and June are the best time of the year to launch a campaign. Additionally, many failed campaings launched in January, June, July and October.    
 Examining our BoxPlot chart for researching musicals in GB; It shows that the campaign goal(£4000)is outside of the pledge IRQ. That means the customer should reduce the production cost of the musical (Probably around or under £2000- Because of the goal-median).
