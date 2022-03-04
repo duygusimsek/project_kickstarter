@@ -1,12 +1,12 @@
 # project_kickstarter
 
-##Purpose Of The Analysis
+## Purpose Of The Analysis
 
 For this project, the costumer wants a crowdfunding campaign to help fund her play "Fever". 
 
 Kickstarter crowdfunding campaign data are analyzed to determine specific factors that affect a project campaing's success.
 
-##Analysis and Challenges
+## Analysis and Challenges
 
 First, by using conditional formatting, some of the columns of the worksheet are highlighted (etc. outcomes). 
 
@@ -16,11 +16,13 @@ To determine how a campaign achieves its funding goal, percentages of campaing f
 
 Since the customer wants to start a campaign for theather, the data is sorted to Category and Subcategory, and analyzed. For this analysis visual presentations are added (Parent Category Outcomes and Parent Subcategory Outcomes).
 
-###Outcome Based on Launch Date Analysis
+### Outcome Based on Launch Date Analysis
 
 To determine the campaign timeline, Outcomes Based on Launch Date worksheet is created and Kickstarter campaigns outcomes are analyzed based on months (Unix timestamps). A line chart is added for visual presentation.
 
 In the Descriptive Statistic worksheet, based on Successful US Kickstarter and Failed US Kickstarter, our data's Mean, Median, Standart Deviation, and IQR are calculated. 
+
+### BoxPlot
 
 For the customer's future project research for musicals in Great Britain, a BoxPlot is created by using the distribution of campaign goals and the total amount of pledge. The extreme data points(outliers) were eliminated to plan better campaign funding(Customer estimate budget £4000).
 
