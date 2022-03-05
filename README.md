@@ -1,34 +1,47 @@
-# project_kickstarter
+# Kickstarter_Challenge
 
 ## Purpose Of The Analysis
 
-For this project, the costumer wants a crowdfunding campaign to help fund her play "Fever". 
+The play “Fever” is nearly reached its fundraising goal in a short time. 
 
-Kickstarter crowdfunding campaign data are analyzed to determine specific factors that affect a project campaing's success.
+The customer wants to know about different campaigns processes in the context of their launch dates and their funding goals. 
 
 ## Analysis and Challenges
 
-First, by using conditional formatting, some of the columns of the worksheet are highlighted (etc. outcomes). 
+### Outcomes-Based on Launch Dates
 
-Because the customer is interested in theater/play in the US, by sorting our data, two different worksheets are prepared to show Successful and Failed campaigns in the US.(Successful US Kickstarter and Failed US Kickstarter)
+To analyze the “Outcomes Based on Launch Dates”, a new column “Years” was created by using the “Date Created Conversion” column as the source. [kickstarter_challege.xlsx](https://github.com/duygusimsek/project_kickstarter/blob/main/Kickstarter_Challenge.xlsx.zip)
 
-To determine how a campaign achieves its funding goal, percentages of campaing funding are calculated. 
+Based on the “Parent Category” and the “Years” columns from the “Kickstarter” worksheet, a pivot table was created and labeled as “Theater Outcomes by Launch Date”. 
 
-Since the customer wants to start a campaign for theather, the data is sorted to Category and Subcategory, and analyzed. For this analysis visual presentations are added (Parent Category Outcomes and Parent Subcategory Outcomes).
+Since the customer is interested in theater, the pivot table was rearranged to display only the data for “theater”. 
 
-### Outcome Based on Launch Date Analysis
+For this analysis visual presentation was added.[Theater_Outcomes_vs_Launchpng.png](https://github.com/duygusimsek/project_kickstarter/blob/main/Resources/Theater_Outcomes_vs_Launchpng.png)
 
-To determine the campaign timeline, Outcomes Based on Launch Date worksheet is created and Kickstarter campaigns outcomes are analyzed based on months (Unix timestamps). A line chart is added for visual presentation.
+### Outcomes-Based on Goals
 
-In the Descriptive Statistic worksheet, based on Successful US Kickstarter and Failed US Kickstarter, our data's Mean, Median, Standart Deviation, and IQR are calculated. 
+Based on the campaign’s goals a new worksheet was created and labeled “Outcomes Based on Goals”.  In this worksheet, numbers of successful failed or canceled and percentages of successful failed or canceled were calculated. 
 
-### BoxPlot
+The data that had been sorted was filtered to the “play” subcategory on account of customer interest. 
+ 
+For visual presentation to this analysis, a line chart was added.[Outcomes_vs_Goals.png](https://github.com/duygusimsek/project_kickstarter/blob/main/Resources/Outcomes_vs_Goals.png)
 
-For the customer's future project research for musicals in Great Britain, a BoxPlot is created by using the distribution of campaign goals and the total amount of pledge. The extreme data points(outliers) were eliminated to plan better campaign funding(Customer estimate budget £4000).
+## Results
 
-## Regarding Our Findings
-Examining our "Parent Category Outcomes" bar chart; It indicates that among all the other subcategories, theather has the highest success. 
+### Examining our findings
 
-Examining our "Outcomes Based On Launch Date" line chart; It reveals that May and June are the best time of the year to launch a campaign. Additionally, many failed campaings launched in January, June, July and October.    
+1. For “Outcomes-Based on Launch Dates”
 
-Examining our BoxPlot chart for researching musicals in GB; It shows that the campaign goal(£4000)is outside of the pledge IRQ. That means the customer should reduce the production cost of the musical (Probably around or under £2000- Because of the goal-median).
+- The “Theater Outcomes by Launch Date” line chart indicates that a greater number of successful campaigns had been launched in May. 
+- The chart shows that most of the failed campaigns had been launched in October. Also, canceled campaigns line’s reveals that there is no canceled campaign in October.  
+
+
+2. For “Outcomes-Based on Goals”
+
+- The “Outcomes-Based on Goals” line chart indicates that the percentage of successful campaigns is the highest in the “Less than 1000” goal. 
+- The goal range between  “15000 to 19999” is that the percentages of successful and failed campaigns are equal. 
+- When we look at the chart, we can see the symmetric relationship between the “sum of percentage successful” and the “sum of percentage failed” because the “sum of percentage canceled” is zero.  
+
+To create a more reliable analysis, new data sets are needed. 
+
+
